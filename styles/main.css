@@ -11,6 +11,9 @@ html{
   scroll-behavior: smooth;
   scroll-padding-top: 1rem;
 }
+body{
+    background-color: black;
+}
 :root {
   --colorMain: #d3ad7f;
   --black: #13131a;
@@ -25,14 +28,13 @@ html{
   border-bottom: var(--border);
 }
 .container{
-  background-color: black;
   justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
 }
 .header-background-img{
     background-image: url(../assets/images/home-img.jpg);
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -98,4 +100,86 @@ html{
   cursor: pointer;
   border: var(--border);
   font-size: 1.7rem;
+}
+
+.container-cart{
+  background-color: #efeded;
+  position: absolute;
+  right: -100%;
+  top:101%;
+  width: 30vw;
+  height: calc(100vh - 3rem);
+}
+.container-cart.active {
+  right: 0;
+}
+.item-cart{
+  position: relative;
+  border: var(--border);
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem ;
+}
+.img-product{
+width: 4rem;
+}
+.fa-times{
+      cursor: pointer;
+    font-size: 1.2rem;
+}
+.fa-times:hover{
+  color: var(--colorMain);
+}
+.price{
+   font-size: 0.8rem;
+  color:#6c6c6b;
+}
+.content{
+      gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+  background-color: var(--colorMain);
+  color: var(--textColor);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 1rem;
+  font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn:hover{
+  color: var(--black);
+  padding: 0.5rem 1.5rem;
+  transition: 0.4s;
+}
+@media screen and (max-width: 767px) {
+  #menu-btn {
+  display:  block;
+}
+.nav a{
+  display: block;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--black);
+}
+.nav{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--textColor);
+    width: 10rem;
+    height: calc(100vh - 3.5rem);
+    flex-direction: column;
+  }
+.nav.active {
+    right: 0;
+  }
+.search-form {
+    width: 98%;
+    left: 0;
+  }
 }
