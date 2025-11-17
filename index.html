@@ -2,75 +2,200 @@
 <html lang="fa-IR" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cofee-shop</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cofee-shop</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
-    <header class="head">
-        <div class="container flex item-center padding-5">
-            <div><a href="./index.html"><img class="image-logo" src="./assets/images/logo.png" alt="logo"></a></div>
-            <nav class="flex nav">
-                <a href="#home">خانه</a>
-                <a href="#about">درباره ما</a>
-                <a href="#menu">منوی کافه</a>
-                <a href="#product">محصولات</a>
-                <a href="#reviews">نظرات کاربران</a>
-                <a href="#contact">تماس با ما</a>
-                <a href="#blogs">وبلاگ</a>
-            </nav>
-            <div class="icons-head flex">
-                <i class="fas fa-search" id="search-btn"></i>
-                <i class="fas fa-shopping-cart" id="cart-btn"></i>
-                <i class="fas fa-bars" id="menu-btn"></i>
-            </div>
+  <header class="head">
+    <div class="container flex item-center padding-5">
+      <div><a href="./index.html"><img class="image-logo" src="./assets/images/logo.png" alt="logo"></a></div>
+      <nav class="flex nav">
+        <a href="#home">خانه</a>
+        <a href="#about">درباره ما</a>
+        <a href="#menu">منوی کافه</a>
+        <a href="#product">محصولات</a>
+        <a href="#reviews">نظرات کاربران</a>
+        <a href="#contact">تماس با ما</a>
+        <a href="#blogs">وبلاگ</a>
+      </nav>
+      <div class="icons-head flex">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-shopping-cart" id="cart-btn"></i>
+        <i class="fas fa-bars" id="menu-btn"></i>
+      </div>
+    </div>
+    <!-- search box -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="جستجو..." />
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+    <div class="container-cart">
+      <div class="item-cart">
+        <span class="fas fa-times"></span>
+        <img src="./assets/images/product-1.png" alt="product-1" class="img-product">
+        <div class="content">
+          <h3>محصول 1</h3>
+          <p class="price">150,000 تومان</p>
         </div>
-        <!-- search box -->
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="جستجو..." />
-            <label for="search-box" class="fas fa-search"></label>
+      </div>
+      <div class="item-cart">
+        <span class="fas fa-times"></span>
+        <img src="./assets/images/product-2.png" alt="product-2" class="img-product">
+        <div class="content">
+          <h3>محصول 2</h3>
+          <p class="price">150,000 تومان</p>
         </div>
-        <div class="container-cart">
-            <div class="item-cart">
-                <span class="fas fa-times"></span>
-                <img src="./assets/images/product-1.png" alt="product-1" class="img-product">
-                <div class="content">
-                    <h3>محصول 1</h3>
-                    <p class="price">150,000 تومان</p>
-                </div>
-            </div>
-            <div class="item-cart">
-                <span class="fas fa-times"></span>
-                <img src="./assets/images/product-2.png" alt="product-2" class="img-product">
-                <div class="content">
-                    <h3>محصول 2</h3>
-                    <p class="price">150,000 تومان</p>
-                </div>
-            </div>
-            <div class="item-cart">
-                <span class="fas fa-times"></span>
-                <img src="./assets/images/product-3.png" alt="product-3" class="img-product">
-                <div class="content">
-                    <h3>محصول 3</h3>
-                    <p class="price">150,000 تومان</p>
-                </div>
-            </div>
-            <button class="btn">سبد خرید</button>
+      </div>
+      <div class="item-cart">
+        <span class="fas fa-times"></span>
+        <img src="./assets/images/product-3.png" alt="product-3" class="img-product">
+        <div class="content">
+          <h3>محصول 3</h3>
+          <p class="price">150,000 تومان</p>
         </div>
-    </header>
-    <!-- ============= START HOME ================= -->
-    <section class="header-background-img">
-        <div class="container-home">
-            <h2>قهوه تازه برای صبحی پرانرژی</h2>
-            <p>روزت رو با یک فنجان قهوه تازه و انرژی‌بخش آغاز کن! طعمی که روزت رو روشن می‌کنه و انگیزه می‌ده تا بهترین
-                خودت باشی.</p>
-            <a href="#" class="btn">همین حالا سفارش بده</a>
+      </div>
+      <button class="btn">سبد خرید</button>
+    </div>
+  </header>
+  <!-- ============= START HOME ================= -->
+  <section class="header-background-img" id="home">
+    <div class="container-home">
+      <h2>قهوه تازه برای صبحی پرانرژی</h2>
+      <p>روزت رو با یک فنجان قهوه تازه و انرژی‌بخش آغاز کن! طعمی که روزت رو روشن می‌کنه و انگیزه می‌ده تا بهترین
+        خودت باشی.</p>
+      <a href="#" class="btn">همین حالا سفارش بده</a>
+    </div>
+  </section>
+  <!-- ============= START about ================= -->
+  <section class="countainer-about" id="about">
+    <h2 class="text-container"><span>درباره</span> ما</h2>
+    <div class="row-flex">
+      <img src="./assets/images/about-img.jpeg" alt="about">
+      <div class="content-about">
+        <h3>چرا قهوه‌ی ما خاص است؟</h3>
+        <p>ما با دقت و عشق، دانه‌های قهوه‌ی باکیفیت را از بهترین مزارع انتخاب می‌کنیم تا طعمی غنی و بی‌نظیر به
+          شما
+          هدیه دهیم. هر فنجان، داستانی از عطر و تازگی را برایتان روایت می‌کند.</p>
+        <p>از فرآوری دقیق گرفته تا روش‌های خاص دم‌آوری، همه چیز برای این است که شما طعمی دلپذیر و انرژی‌بخش را
+          تجربه
+          کنید. همین حالا امتحان کنید!</p>
+        <a href="#" class="btn">بیشتر ببنید ...</a>
+      </div>
+    </div>
+  </section>
+  <!-- ============= START MENU ================= -->
+  <section class="container-menu" id="menu">
+    <h2 class="text-container"><span>منوی</span> ما</h2>
+    <div class="content-menu">
+      <div class="box">
+        <img src="./assets/images/menu-1.png" alt="menu-1">
+        <div class="prcie">
+          ۱,۵۰۰,۰۰۰ تومان
+          <span>۱,۹۹۰,۰۰۰</span>
         </div>
-    </section>
-    <script src="app.js"></script>
+        <a href="#" class="btn">افزودن به سبد خرید</a>
+      </div>
+      <div class="box">
+        <img src="./assets/images/menu-2.png" alt="menu-2">
+        <div class="prcie">
+          ۱,۵۰۰,۰۰۰ تومان
+          <span>۱,۹۹۰,۰۰۰</span>
+        </div>
+        <a href="#" class="btn">افزودن به سبد خرید</a>
+      </div>
+      <div class="box">
+        <img src="./assets/images/menu-3.png" alt="menu-3">
+        <div class="prcie">
+          ۱,۵۰۰,۰۰۰ تومان
+          <span>۱,۹۹۰,۰۰۰</span>
+        </div>
+        <a href="#" class="btn">افزودن به سبد خرید</a>
+      </div>
+      <div class="box">
+        <img src="./assets/images/menu-4.png" alt="menu-4">
+        <div class="prcie">
+          ۱,۵۰۰,۰۰۰ تومان
+          <span>۱,۹۹۰,۰۰۰</span>
+        </div>
+        <a href="#" class="btn">افزودن به سبد خرید</a>
+      </div>
+      <div class="box">
+        <img src="./assets/images/menu-5.png" alt="menu-5">
+        <div class="prcie">
+          ۱,۵۰۰,۰۰۰ تومان
+          <span>۱,۹۹۰,۰۰۰</span>
+        </div>
+        <a href="#" class="btn">افزودن به سبد خرید</a>
+      </div>
+      <div class="box">
+        <img src="./assets/images/menu-6.png" alt="menu-6">
+        <div class="prcie">
+          ۱,۵۰۰,۰۰۰ تومان
+          <span>۱,۹۹۰,۰۰۰</span>
+        </div>
+        <a href="#" class="btn">افزودن به سبد خرید</a>
+      </div>
+    </div>
+  </section>
+  <!-- ============= START PRODUCT ================= -->
+  <section class="container-product" id="product">
+    <h2 class="text-container"><span>محصولات</span> ما</h2>
+    <div class="content-product">
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="far fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <img src="./assets/images/product-1.png" alt="product-1">
+        <h3>قهوه تازه</h3>
+        <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas far fa-star-half"></i>
+        </div>
+      </div>
+       <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="far fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <img src="./assets/images/product-2.png" alt="product-2">
+        <h3>قهوه تازه</h3>
+        <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas far fa-star-half"></i>
+        </div>
+      </div>
+       <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="far fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <img src="./assets/images/product-3.png" alt="product-3">
+        <h3>قهوه تازه</h3>
+        <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas far fa-star-half"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script>
 </body>
 
 </html>

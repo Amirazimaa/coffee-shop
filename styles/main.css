@@ -26,6 +26,7 @@ body {
   right: 0;
   left: 0;
   border-bottom: var(--border);
+  background-color: var(--black);
 }
 .container {
   justify-content: space-around;
@@ -141,6 +142,7 @@ body {
   margin: 1.5rem 1rem;
   font-size: 1.3rem;
   cursor: pointer;
+  text-decoration: none;
 }
 .btn:hover {
   color: var(--black);
@@ -171,8 +173,96 @@ body {
 }
 .container-home a {
   width: 15rem;
+}
+/* =====about===== */
+.countainer-about {
+  padding: 0 6rem;
+  color: var(--textColor);
+}
+.text-container {
+  color: var(--textColor);
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+.text-container span {
+  color: var(--colorMain);
+}
+.row-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.row-flex img {
+  width: 25rem;
+  flex: 1 1 25rem;
+}
+.content-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 35rem;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+.content-about h3 {
+  font-size: 2rem;
+}
+/* menu */
+.prcie {
+  color: var(--textColor);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+.prcie span {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: var(--textColor);
+}
+.content-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 7rem;
+}
+.box {
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem;
+  color: var(--textColor);
+}
+
+.content-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 7rem;
+}
+.icons{
+  display: flex;
+  gap: 0.5rem;
+}
+.icons a {
+  color: white;
+  border: solid 1px white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
   text-decoration: none;
 }
+.icons a:hover{
+ background-color: var(--colorMain);
+}
+.box h3{
+  font-size: 1.5rem;
+}
+.star{
+  color: var(--colorMain);
+}
+
 @media screen and (max-width: 767px) {
   #menu-btn {
     display: block;
