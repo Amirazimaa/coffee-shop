@@ -220,7 +220,7 @@ body {
   text-decoration: line-through;
   color: var(--textColor);
 }
-.content-menu {
+.content-sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
@@ -236,13 +236,7 @@ body {
   color: var(--textColor);
 }
 
-.content-product {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1.5rem;
-  padding: 1rem 7rem;
-}
-.icons{
+.icons {
   display: flex;
   gap: 0.5rem;
 }
@@ -253,15 +247,31 @@ body {
   padding: 0.5rem;
   text-decoration: none;
 }
-.icons a:hover{
- background-color: var(--colorMain);
+.icons a:hover {
+  background-color: var(--colorMain);
 }
-.box h3{
+.box h3 {
   font-size: 1.5rem;
 }
-.star{
+.star {
   color: var(--colorMain);
 }
+/* reviews */
+
+.i-rev{
+  color: var(--colorMain);
+  font-size: 2.5rem;
+}
+.p-rev {
+  font-size: 1.3rem;
+}
+.user {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
 
 @media screen and (max-width: 767px) {
   #menu-btn {
