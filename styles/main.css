@@ -224,7 +224,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
-  padding: 1rem 7rem;
+  padding: 1rem 5rem;
 }
 .box {
   border: var(--border);
@@ -291,15 +291,35 @@ body {
   border: var(--border);
 }
 .inputBox input {
-  padding: 1rem ;
+  padding: 1rem;
   font-size: 1rem;
   background: none;
   border: none;
   padding-left: 15rem;
 }
-.inputBox span{
+.inputBox span {
   font-size: 1.5rem;
   padding-right: 1rem;
+}
+/* blogs */
+
+.content-blogs a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--textColor);
+}
+
+.content-blogs span {
+  font-size: 0.7rem;
+  color: var(--colorMain);
+}
+.content-blogs p {
+  padding: 1rem 0rem 2rem 0rem;
+  font-size: 1.3rem;
+}
+
+.a-blogs{
+  margin-right: 5rem;
 }
 
 @media screen and (max-width: 767px) {
