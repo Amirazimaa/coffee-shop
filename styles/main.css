@@ -318,8 +318,55 @@ body {
   font-size: 1.3rem;
 }
 
-.a-blogs{
+.a-blogs {
   margin-right: 5rem;
+}
+
+/* footer */
+.footer {
+  background: var(--black);
+  text-align: center;
+}
+.footer .share {
+  padding: 1rem 0;
+}
+.footer .share a {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  color: var(--textColor);
+  border: var(--border);
+  margin: 0.3rem;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.footer .share a:hover,
+.footer .links a:hover {
+  background-color: var(--colorMain);
+}
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.footer .links a {
+  padding: 0.7rem 1rem;
+  color: var(--textColor);
+  border: var(--border);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.footer .credit {
+  font-size: 2rem;
+  color: var(--textColor);
+  padding: 1rem;
+}
+.footer .credit span {
+  color: var(--colorMain);
 }
 
 @media screen and (max-width: 767px) {
