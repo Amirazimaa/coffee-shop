@@ -173,7 +173,7 @@ body {
   font-size: 1.4rem;
 }
 .content-home h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .content-home a {
   width: 15rem;
@@ -399,9 +399,10 @@ body {
   }
   .content-home {
     padding-right: 4rem;
+    font-size: 1.2rem;
   }
   .content-home h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .content-home a {
     width: 11rem;
@@ -409,15 +410,23 @@ body {
   }
 }
 @media screen and (max-width: 620px) {
-    .map{
+  .map {
     width: 30rem;
   }
   .row-flex img {
-  width: 15rem;
-}
+    width: 15rem;
+  }
+  .content-home {
+    font-size: 1rem;
+    max-width: 80%;
+  }
 }
 @media screen and (max-width: 500px) {
-    .map{
+  .map {
     width: 25rem;
+  }
+  .image-blogs {
+    width: 19rem;
+    height: 15rem;
   }
 }
