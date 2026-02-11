@@ -190,7 +190,7 @@ body {
   font-size: 2.5rem;
 }
 .content-home a {
-  width: 12rem;
+  width: 15rem;
 }
 /* =====about===== */
 .countainer-about {
@@ -459,12 +459,25 @@ body {
     margin-right: 2rem;
   }
   .header-background-img {
-    background-position: left;
+    background-size: contain;
   }
+    .content-home a {
+    width: 12rem;
+    font-size: 1rem;
+  }
+  .btn {
+  font-size: 1rem;
+}
+.form-contact h3 {
+    font-size: 1.5rem;
+}
+.inputBox {
+    width: 190%;
+}
 }
 @media screen and (max-width: 400px) {
   .map {
-    width: 18rem;
+    width: 20rem;
   }
   .image-blogs {
     width: 17rem;
