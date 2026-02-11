@@ -3,7 +3,7 @@
 ## demo :
 [coffee-shop](https://amirazimaa.github.io/coffee-shop/)
 
-![demo](../coffee-shop/assets/images/demo.PNG)
+![demo](./assets/images/demo.PNG)
 
 ## Langues :
 ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
