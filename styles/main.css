@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "dana-med";
-    src: url(../assets/fonts/Dana/woff2/DanaFaNum-Medium.woff2);
-  }
+  font-family: "dana-med";
+  src: url(../assets/fonts/Dana/woff2/DanaFaNum-Medium.woff2);
+}
 
 * {
   padding: 0;
@@ -452,12 +452,22 @@ body {
     height: 15rem;
   }
   .content-sections {
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  padding: 1rem 3rem;
-}
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding: 1rem 3rem;
+  }
+  .a-blogs {
+    margin-right: 2rem;
+  }
+  .header-background-img {
+    background-position: left;
+  }
 }
 @media screen and (max-width: 400px) {
   .map {
     width: 18rem;
+  }
+  .image-blogs {
+    width: 17rem;
+    height: 15rem;
   }
 }
