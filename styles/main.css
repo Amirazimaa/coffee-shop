@@ -451,7 +451,7 @@ body {
     width: 19rem;
     height: 15rem;
   }
-    .content-sections {
+  .content-sections {
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   padding: 1rem 3rem;
 }
