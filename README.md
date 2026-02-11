@@ -1,7 +1,7 @@
 # coffee-shop
 
 ## demo :
-[coffee-shop](link github)
+[coffee-shop](https://amirazimaa.github.io/coffee-shop/)
 ![demo](screen)
 
 ## Langues :
