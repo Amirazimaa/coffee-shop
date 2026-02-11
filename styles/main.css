@@ -427,7 +427,7 @@ body {
     font-size: 1.5rem;
   }
   .content-home a {
-    width: 9rem;
+    width: 10rem;
     font-size: 1rem;
   }
 }
@@ -450,5 +450,10 @@ body {
   .image-blogs {
     width: 19rem;
     height: 15rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .map {
+    width: 18rem;
   }
 }
